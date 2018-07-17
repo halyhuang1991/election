@@ -1,0 +1,32 @@
+cd ../
+mkdir election
+
+git clone https://github.com/atom/electron-quick-start
+cd D:\C\github\election\electron-quick-start
+npm install electron@1.* -save-dev
+cd electron-quick-start
+npm install
+npm start
+
+bootstrap 3 snippets/bootstrap 4 snippets
+
+
+
+npm install cnpm -g --registry=http://registry.npm.taobao.org
+cnpm install --save-dev electron
+//cnpm install
+cnpm start
+
+//cnpm link  electron
+cnpm install --save-dev electron-packager
+cnpm run-script packager
+====================================
+echo "# election" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:halyhuang1991/election.git
+git push -u origin master
+
+
+git config core.autocrlf false
