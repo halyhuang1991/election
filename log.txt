@@ -30,3 +30,4 @@ git push -u origin master
 
 
 git config core.autocrlf false
+git config core.longpaths true
