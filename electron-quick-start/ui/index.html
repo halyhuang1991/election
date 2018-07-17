@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="../css/bootstrap.min.css">
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+
     
 </head>
 <body>
@@ -27,5 +29,64 @@
         <button type="button" class="btn btn-default">Middle</button>
         <button type="button" class="btn btn-default">Right</button>
     </div>
+    
+    <div class="container">
+        
+        <div class="container">
+                <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">5</span>
+                            Item 1
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">10</span>
+                            Item 2
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">15</span>
+                            Item 3
+                        </li>
+                    </ul>
+        </div>
+        
+        <div class="container">
+            
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Content goes here</p>
+                </a>
+            </div>
+            
+        </div>
+        <div class="clearfix">
+            
+            </div>
+        <div class="container">
+            
+            <div role="tabpanel" >
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" id="myTab">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">tab</a>
+                    </li>
+                </ul>
+            
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">home</div>
+                    <div role="tabpanel" class="tab-pane" id="tab">tab</div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+    </div>
+    <script src="../js/uiindex.js"></script>
 </body>
 </html>
