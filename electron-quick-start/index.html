@@ -2,7 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -13,6 +21,17 @@
     <div id="holder">
       Drag your file here
     </div>
+    <div>
+      <input type="text" id='name' value=""/>
+      <input type="text" id="password"/>
+      <div class="clearfix"></div>
+    </div>
+    <div>
+      <input type="button" id="a"  value="login"/>
+      <input type="button" id="b"  value="saveNameAndPassword"/>
+      <input type="button" id="c"  value="getCookies"/>
+    </div>
+    
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')

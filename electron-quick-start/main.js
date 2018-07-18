@@ -58,7 +58,11 @@ var template = [
     submenu: [
       {
         label: '第一页',
-        click () { mainWindow.loadFile('ui/index.html') }
+        click () { 
+          mainWindow.loadFile('ui/index.html');
+          const ses = mainWindow.webContents.session
+          console.log(ses.getUserAgent())
+        }
       }
     ]
   }, {
@@ -107,3 +111,12 @@ var template = [
   }]
 var menu = Menu.buildFromTemplate(template)
 Menu.setApplicationMenu(menu);
+
+
+var ipcMain = require('electron').ipcMain;
+
+global.sharedObj = {prop1: null};
+
+ipcMain.on('show-prop1', function(event) {
+  console.log(global.sharedObj.prop1);
+});
